@@ -1,6 +1,6 @@
 {
   "title": "Glioblastoma transcriptomic-signature measurement manuscript reproducibility",
-  "description": "Minimal reproducibility code for Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma. Eight certified principal modules and 78 current Results claims; explicit aggregate-validation, public-processed-input and source-dependent tiers. No raw or observation-level study data. This independent manuscript repository is separate from the older canonical-MES project and the MeasureQual v0.10.0 software.",
+  "description": "Minimal reproducibility code for Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma. Eight certified principal modules support 78 current Results claims across aggregate-validation, public processed-input and source-dependent reproducibility tiers. No raw or observation-level study data are redistributed.",
   "upload_type": "software",
   "creators": [
     {
