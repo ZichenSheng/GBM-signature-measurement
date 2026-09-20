@@ -1,5 +1,5 @@
 file	sha256	line_count	header
-.zenodo.json	49893211ba47a9bd5875f10167143e87063025443a30e6ebd9cb77df752192a3	26	{
+.zenodo.json	8aa14bf3b2f2e0a30f44f3fe9c384671d337a95768a0bbd19d2103b1808fa665	26	{
 R/utils.R	86273d54d6a98503561ea2e13557b30d5c653764d0b24ba0091e3aa59c4ef3a1	7	# Locate this repository without embedding machine paths.
 analysis/01_inspect_signatures.R	b3913603dc9210493fe51e00d4bec5ab535a7149b7a27aa80bc44dc396ec388b	12	# Deterministic definition checks; no patient data and no clinical score inference.
 analysis/02_patient_external_transfer.py	5d075c263d9e19667080faa493131bab76e5af734750abd9c8d9cb3e7ed7935d	98	"""""""Frozen ecology transfer from prepared, externally held arrays; no data redistributed."""""""
