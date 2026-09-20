@@ -1,0 +1,26 @@
+{
+  "title": "Glioblastoma transcriptomic-signature measurement manuscript reproducibility",
+  "description": "Minimal reproducibility code for Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma. Eight certified principal modules and 78 current Results claims; explicit aggregate-validation, public-processed-input and source-dependent tiers. No raw or observation-level study data. This independent manuscript repository is separate from the older canonical-MES project and the MeasureQual v0.10.0 software.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Sheng, Zichen"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "glioblastoma",
+    "transcriptomic signatures",
+    "reproducibility",
+    "measurement qualification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ZichenSheng/GBM-signature-measurement",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

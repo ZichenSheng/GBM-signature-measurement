@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this manuscript reproducibility release. A new version DOI will be added after archival."
+title: "Glioblastoma transcriptomic-signature measurement manuscript reproducibility"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Sheng
+    given-names: Zichen
+    email: "225113177+ZichenSheng@users.noreply.github.com"
+repository-code: "https://github.com/ZichenSheng/GBM-signature-measurement"
+url: "https://github.com/ZichenSheng/GBM-signature-measurement"
+license: MIT

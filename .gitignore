@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+renv/library/
+renv/staging/
+_private_audit/
+*.npz
+*.parquet
+*.h5ad
+*.rds
+*.RData
+*.zip
+*.tar.gz
