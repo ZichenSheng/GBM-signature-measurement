@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this manuscript reproducibility release. A new version DOI will be added after archival."
+message: "Please cite this manuscript reproducibility release. Use the version DOI below."
 title: "Glioblastoma transcriptomic-signature measurement manuscript reproducibility"
 type: software
 version: 1.0.0
@@ -10,3 +10,5 @@ authors:
 repository-code: "https://github.com/ZichenSheng/GBM-signature-measurement"
 url: "https://github.com/ZichenSheng/GBM-signature-measurement"
 license: MIT
+doi: "10.5281/zenodo.22851963"
+date-released: 2026-09-20
