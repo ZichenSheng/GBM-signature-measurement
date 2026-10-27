@@ -1,0 +1,25 @@
+transform	family	rep_n	endpoint	observed	null_n	null_median	null_q025	null_q975	null_max	n_null_ge_obs	p_plus1	family_label	endpoint_label
+linear	N1_full	201	structure_rho	0.7309225783	500	0.5469031439	0.5056282625	0.5916456231	0.606593388	0	0.001996007984	Full gene sets (201)	Cross-cohort structure
+linear	N1_full	201	absPC1_eco_CGGA325	0.9390657781	500	0.164599531	0.01301524127	0.3958780699	0.6263729483	0	0.001996007984	Full gene sets (201)	Ecological alignment, CGGA325
+linear	N1_full	201	absPC1_eco_CGGA693	0.9574818753	500	0.6574351939	0.543182143	0.7516760029	0.8096639896	0	0.001996007984	Full gene sets (201)	Ecological alignment, CGGA693
+linear	N2_ruleA_all201	201	structure_rho	0.6914194916	500	0.5347509755	0.4899234106	0.5742054422	0.5874437399	0	0.001996007984	Programme genes removed (201)	Cross-cohort structure
+linear	N2_ruleA_all201	201	absPC1_eco_CGGA325	0.916358139	500	0.2926693817	0.08154233	0.5603040541	0.7439837097	0	0.001996007984	Programme genes removed (201)	Ecological alignment, CGGA325
+linear	N2_ruleA_all201	201	absPC1_eco_CGGA693	0.9333695352	500	0.5234168834	0.4044413959	0.6475816209	0.6799851382	0	0.001996007984	Programme genes removed (201)	Ecological alignment, CGGA693
+linear	N2_ruleC_le20pct	160	structure_rho	0.6743917699	500	0.519948556	0.4625475618	0.5643225285	0.5854074688	0	0.001996007984	<=20% of genes removed (160)	Cross-cohort structure
+linear	N2_ruleC_le20pct	160	absPC1_eco_CGGA325	0.900345551	500	0.2439837097	0.04441719116	0.4680588979	0.5628162409	0	0.001996007984	<=20% of genes removed (160)	Ecological alignment, CGGA325
+linear	N2_ruleC_le20pct	160	absPC1_eco_CGGA693	0.9037983366	500	0.5216830051	0.4159926453	0.633288081	0.7056027132	0	0.001996007984	<=20% of genes removed (160)	Ecological alignment, CGGA693
+linear	N2_ruleD_nooverlap	114	structure_rho	0.6406616935	500	0.5041167389	0.4366345085	0.5645795333	0.5885653984	0	0.001996007984	Never contained a programme gene (114)	Cross-cohort structure
+linear	N2_ruleD_nooverlap	114	absPC1_eco_CGGA325	0.89053437	500	0.2991947427	0.02126141553	0.6026811058	0.816024929	0	0.001996007984	Never contained a programme gene (114)	Ecological alignment, CGGA325
+linear	N2_ruleD_nooverlap	114	absPC1_eco_CGGA693	0.9101622415	500	0.5084740919	0.3801378052	0.6474587251	0.7151009365	0	0.001996007984	Never contained a programme gene (114)	Ecological alignment, CGGA693
+log2	N1_full	201	structure_rho	0.7506314502	500	0.5372755251	0.4982517279	0.5783464637	0.59639459	0	0.001996007984	Full gene sets (201)	Cross-cohort structure
+log2	N1_full	201	absPC1_eco_CGGA325	0.9660002468	500	0.09544304579	0.004809946933	0.4018025731	0.8385165988	0	0.001996007984	Full gene sets (201)	Ecological alignment, CGGA325
+log2	N1_full	201	absPC1_eco_CGGA693	0.9598635762	500	0.7014966609	0.6260786723	0.7685241552	0.7952785161	0	0.001996007984	Full gene sets (201)	Ecological alignment, CGGA693
+log2	N2_ruleA_all201	201	structure_rho	0.7130762383	500	0.5331511777	0.4846083297	0.572977926	0.5922493127	0	0.001996007984	Programme genes removed (201)	Cross-cohort structure
+log2	N2_ruleA_all201	201	absPC1_eco_CGGA325	0.9473651734	500	0.1739324941	0.01065886092	0.6432864371	0.8557324448	0	0.001996007984	Programme genes removed (201)	Ecological alignment, CGGA325
+log2	N2_ruleA_all201	201	absPC1_eco_CGGA693	0.9384187411	500	0.6153219583	0.5315761144	0.6941905551	0.7126906552	0	0.001996007984	Programme genes removed (201)	Ecological alignment, CGGA693
+log2	N2_ruleC_le20pct	160	structure_rho	0.7024163584	500	0.5207171591	0.4651748674	0.5664278019	0.5970686217	0	0.001996007984	<=20% of genes removed (160)	Cross-cohort structure
+log2	N2_ruleC_le20pct	160	absPC1_eco_CGGA325	0.9210786129	500	0.1005800321	0.005487936567	0.3736285943	0.7301616685	0	0.001996007984	<=20% of genes removed (160)	Ecological alignment, CGGA325
+log2	N2_ruleC_le20pct	160	absPC1_eco_CGGA693	0.9099621786	500	0.6162317681	0.535441615	0.6908345004	0.7302199739	0	0.001996007984	<=20% of genes removed (160)	Ecological alignment, CGGA693
+log2	N2_ruleD_nooverlap	114	structure_rho	0.6711465281	500	0.51230299	0.4447091705	0.57089777	0.6134716515	0	0.001996007984	Never contained a programme gene (114)	Cross-cohort structure
+log2	N2_ruleD_nooverlap	114	absPC1_eco_CGGA325	0.922405282	500	0.1912871776	0.007820406022	0.6407511107	0.8490990991	0	0.001996007984	Never contained a programme gene (114)	Ecological alignment, CGGA325
+log2	N2_ruleD_nooverlap	114	absPC1_eco_CGGA693	0.9128678537	500	0.59944554	0.498896558	0.7040145951	0.7366315128	0	0.001996007984	Never contained a programme gene (114)	Ecological alignment, CGGA693

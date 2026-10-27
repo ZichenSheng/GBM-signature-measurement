@@ -1,0 +1,24 @@
+sha256 8cd6c13fc150fca5b1058d053d25f3f1ad8dae030b977adad0d7f56b3c8e472b 00_ACT6_CRC04_NATURE2026_GEOMX_PREOUTCOME_PROTOCOL_2026-09-13.md
+sha256 5de595a6cb2394f7a021a4900bd33d4b271a2996d902505415c2504a923c88ee 16_FREEZE_HASHES.tsv
+sha256 b9879c692d28c3648a10dc09b0778e93af73becfd19eb352dc435fef543e14cd ACT6_CRC04_NATURE2026_GEOMX_PREOUTCOME_FREEZE_REVIEW_2026-09-13.zip
+sha256 191d0ecdc10c0e74ab612112d77db5d5cff5168181f4b98586562aa2e90a7f2d ACT6_CRC04_FINAL_PROTOCOL_FREEZE_REVIEW_2026-09-13.md
+sha256 8012816ebb945d18f184f279162e833cdeebe01da0c016d21731dd18a7050ec8 REAL_EXECUTION_APPROVAL.json
+sha256 0d53c6c7f4636ebcd756c70dc6ad426acf881182788e7ea384749ee26d106500 REAL_EXECUTION_LOCK.json
+sha256 a0d2c87c741f4de8faf5ceaa15711faa4fab29f1c09918c28057e8f18a3fe7f6 execute_crc04_once.R
+sha256 fbd17701ee5e8a873454fa465299dbe8ca05c818d2db2cea34b81881d35ade67 10_MEASUREMENT_CALLBACKS.R
+sha256 649411fbf228e70741c3e966ca9e1a5e3fa9cf1b64fce1f196113f0180f9530e REAL_EXECUTION_2026-09-13/REAL_EXECUTION_MANIFEST.json
+sha256 a6fd20a351108f428563d66e07dc421fe55e4d60fa1f7e5347dadc2f5951ef1e REAL_EXECUTION_2026-09-13/REAL_EVIDENCE_RECORD.json
+sha256 ff97f654db674a05eff25a7989c7994941d4a07508fd30ef9194cbcff9d03808 REAL_EXECUTION_2026-09-13/REAL_PAIRED_DIFFERENCES.tsv
+PASS  L1 freeze table lists protocol sha256
+PASS  L2 freeze ZIP member protocol == on-disk protocol
+PASS  L2b freeze ZIP member freeze table == on-disk freeze table
+PASS  L3 review text quotes freeze ZIP sha256
+PASS  L4 approval binds review sha256
+PASS  L4b approval binds freeze table sha256
+PASS  L4c approval binds executor sha256
+PASS  L5 lock binds approval sha256
+PASS  L6 result manifest lists approval and lock sha256
+PASS  L6b result manifest lists paired-differences sha256
+PASS  L7 evidence record (holds T and P) embeds frozen_spec_hash
+NO    X1 paired-differences TSV itself embeds any plan/approval hash
+NO    X2 any plan-side file embeds a result-file hash (would reverse order)

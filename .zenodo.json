@@ -1,6 +1,6 @@
 {
   "title": "Glioblastoma transcriptomic-signature measurement manuscript reproducibility",
-  "description": "Minimal reproducibility code for Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma. Eight certified principal modules support 78 current Results claims across aggregate-validation, public processed-input and source-dependent reproducibility tiers. No raw or observation-level study data are redistributed.",
+  "description": "Final NPJSBA manuscript reproducibility code: corrected Ivy float64 permutation ties; ACT1 post hoc programme-overlap sensitivity; Ivy unsigned anatomical profiles and final Figure 1/5 builders; CARE patient-grouped baseline replay; resolution-specific ACT4 reference validation. Reproducibility levels are claim-bounded. No raw or observation-level study data redistributed. Historical spatial niche claims are withdrawn; v1.0.0 preserved.",
   "upload_type": "software",
   "creators": [
     {
@@ -9,7 +9,7 @@
   ],
   "access_right": "open",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "glioblastoma",
     "transcriptomic signatures",

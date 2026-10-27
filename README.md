@@ -1,35 +1,25 @@
 # GBM signature measurement manuscript reproducibility
 
-This repository provides the minimal analytical code and aggregate validation supporting the principal quantitative results of **Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma**. Raw study datasets are not redistributed and must be obtained from their original sources. This is a bounded manuscript reproducibility release, not a one-command reconstruction from raw data.
+Code supporting **Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma**, synchronized with the final targeted-edit NPJSBA manuscript and final Figures 1–6.
 
-The current Results authority is the September 19, 2026 manuscript, with 78 claim-level entries and six main figures. This independent repository starts at v1.0.0 and follows the current six-section manuscript. See [authority](docs/CURRENT_RESULTS_AUTHORITY.md), [claim crosswalk](docs/RESULT_CODE_CROSSWALK.tsv) and [figure map](docs/RESULT_MAP.md).
+Version 1.1.0 adds corrected Ivy inference, ACT1 overlap sensitivity, Ivy anatomical-profile extraction, final Figure 1/5 assembly, CARE baseline replay and ACT4 resolution-specific validation. This is claim-bounded reproducibility: public aggregate/distribution reaggregation, calculations on external prepared observations, and public-processed-input CRC04 inference are explicitly distinguished. Complete regeneration from redistributed raw databases is not claimed.
 
-| Module | Actual certified capability |
-|---|---|
-| 01_inspect_signatures.R | Inspect MES95 and Primary201 membership definitions |
-| 02_patient_external_transfer.py | Recompute patient-exclusive ecology transfer and patient-bootstrap CI from external prepared arrays |
-| 03_anatomical_resolution.py | Recompute tumour-blocked association and leave-one-tumour-out resolution from external prepared scores |
-| 04_longitudinal_deformation.py | Recompute patient-exclusive all-k deformation from external paired scores |
-| 05_design_capability.R | Validate exact-support qualification and recovery from frozen aggregate counts |
-| 06_crc04_exact_inference.R | Recompute frozen measurement and exact inference from downloaded public processed WTA RDS; includes synthetic fixture |
-| 07_sampling_composition.py | Recompute CARE sampling-null comparisons and composition decomposition from external frozen prepared inputs |
-| 08_aggregate_evidence.py | Recalculate overlap, localization, state-resolution, stability and recovery summaries from safe aggregate inputs |
-
-Eight principal scripts have PASS receipts for their stated scope. The crosswalk distinguishes aggregate validation, public prepared-input reproduction and source-dependent execution; a numerical PASS does not certify omitted preprocessing. No claim is labelled FULL_FROM_SOURCE_DATA. Graphical assembly and real-data plot reconstruction are outside this release.
-
-Quick start (R 4.4.1; Python 3.11):
+See [scientific changes](CHANGELOG.md), [final reproduction commands](docs/FINAL_REPRODUCIBILITY.md), [claim crosswalk](docs/RESULT_CODE_CROSSWALK.tsv), [data access](docs/DATA_ACCESS.md) and [figure map](docs/RESULT_MAP.md). The crosswalk has 81 current entries and four withdrawn historical entries. `provenance/SOURCE_RECOVERY_INVENTORY.tsv` records the previous 51-generator recovery (36 independent reconstructions, 15 author-code replays); that classification is not a claim of independent validation of every file in this release.
 
 ```sh
-Rscript -e 'renv::restore(prompt=FALSE)'
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-lock.txt
 MANUSCRIPT_PYTHON=.venv/bin/python Rscript analysis/99_validate_release.R
 ```
 
-Install renv separately if needed. The validator runs the immediately runnable modules and checks frozen table hashes, schemas, printed values, numerical receipts, denominator and estimand locks. It exits nonzero on mismatch. [Data access](docs/DATA_ACCESS.md) documents Tier 2 CRC04 and Tier 3 source-dependent modes; [datasets.tsv](config/datasets.tsv) registers 18 current-paper resource/subset entries.
+The default suite reaggregates public references and checks numerical kernels; external-input and figure commands are separate. See the executed receipts in `reproducibility/FINAL_VALIDATION.tsv` for the exact scope of each PASS. Output directories and external inputs are ignored by Git.
 
-R1 uses 57 ALL_AUTHOR_ANNOTATED regional measurements from 12 patients. R4 uses 57 MALIGNANT_ONLY regional pseudobulks from 12 donors. The approved [Methods wording correction](docs/MANUSCRIPT_DISCREPANCY_LOG.tsv) changes no result or executed analysis. CRC04's historical four intermediate-vector exact-equality discrepancies remain disclosed; its exact inferential chain reproduces.
+- `analysis/`: current numerical entry points and final Figure 1/5 builders.
+- `audit_tools/`: K02–K05 extraction and verification sources; not new scientific analyses.
+- `results_reference/final/`: derived aggregate/distribution and simulated-world reference tables.
+- `provenance/recovered_generators/`: curated recovered scientific sources; source-dependent provenance, not a one-command installation.
+- `historical/`: superseded references and withdrawn spatial source, excluded from active figures and claims.
 
-Claim-scoped measurement qualification is implemented in [MeasureQual v0.10.0](https://github.com/ZichenSheng/MeasureQual), archived on Zenodo at [doi:10.5281/zenodo.22846512](https://doi.org/10.5281/zenodo.22846512). MeasureQual is maintained as an independent software project and is not vendored in this repository.
+The original [v1.0.0](https://github.com/ZichenSheng/GBM-signature-measurement/releases/tag/v1.0.0) remains archived at [version DOI 10.5281/zenodo.22851963](https://doi.org/10.5281/zenodo.22851963); the repository's concept DOI is [10.5281/zenodo.22851962](https://doi.org/10.5281/zenodo.22851962). The new version DOI is recorded after Zenodo archives the immutable release.
 
-This repository is the authoritative code archive for the current manuscript. The frozen manuscript-associated release is [v1.0.0](https://github.com/ZichenSheng/GBM-signature-measurement/releases/tag/v1.0.0), archived on Zenodo at [doi:10.5281/zenodo.22851963](https://doi.org/10.5281/zenodo.22851963).
+[MeasureQual v0.10.0](https://github.com/ZichenSheng/MeasureQual) remains a separate package, archived at [10.5281/zenodo.22846512](https://doi.org/10.5281/zenodo.22846512).

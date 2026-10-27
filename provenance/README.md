@@ -1,0 +1,9 @@
+# Source recovery and redistribution boundary
+
+`SOURCE_RECOVERY_INVENTORY.tsv` records the completed 51-generator evidence-gap recovery: 36 prior independent reconstructions and 15 reruns through author code. Those are historical execution classifications, not a claim that 51 raw-data workflows execute from this public archive.
+
+`ADDED_FILE_SOURCES.tsv` records original source paths relative to the external source archive, immutable original hashes, public file hashes, purpose and adaptation. `FIGURE_CODE_SOURCES.tsv` records the final figure implementation sources. Code is the research author's source under this repository's MIT licence; no third-party expression objects, observation-level study tables or private correspondence are redistributed. Derived numerical tables and projected simulation worlds are retained to permit bounded checks. Simulation projections exclude observation-block labels, permutation maps and donor/recipient observation indices.
+
+`recovered_generators/` holds recovered scientific source for inspection and for users who independently obtain the external source-project layout and its dependencies. An absolute `/external/` placeholder is an explicit input contract, not an existing data path. These complete chains have not all been replayed in this release. Use the focused entry points in `docs/FINAL_REPRODUCIBILITY.md` for the computations actually tested here. Source/governance builders containing private instructions remain available on request; publication status is recorded claim by claim.
+
+`CRC04_LOCAL_HASH_CHAIN.txt` preserves real local hash/execution records. Local hash-pinning is not independently timestamped external preregistration. Patient data are not included. Historical spatial source is quarantined under `historical/withdrawn_spatial/`; its former positive counts are excluded from active validation.

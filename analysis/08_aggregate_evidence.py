@@ -64,11 +64,6 @@ def run():
     out['crc04_intermediate_failures']=len(failed)
     a=read('representation_publications.tsv')
     close(a.model_instance_id.nunique(),201,0);close(a.publication_id.nunique(),197,0)
-    a=read('supplement_S1.tsv')
-    close(float(a.iloc[2]['estimate']),73,0);close(float(a.iloc[3]['estimate']),108,0)
-    if a.iloc[14]['estimate']!='structure concordance = 0.691':raise ValueError('Overlap-removed structure changed')
-    a=read('spatial_axis_summary.tsv')
-    if len(a)!=3 or not (pd.to_numeric(a.value)>.8).all():raise ValueError('Spatial common-axis summary changed')
     a=read('care_transfer_baseline.tsv').iloc[0]
     close(a.median_mean_cv_r2,.09031,1e-12);close(a.patient_n,56,0);close(a.repeat_n,100,0);close(a.fold_n,5,0)
     a=read('matched_score_descriptive.tsv')
@@ -86,17 +81,12 @@ def run():
     if len(a)!=3 or not (a.endpoint_compatibility=='NO').all() or not (a.score_computable=='YES').all():raise ValueError('Claim-scope boundary changed')
     a=read('claim_records.tsv')
     if len(a)!=4 or a.context.nunique()!=4 or a.signature_id.nunique()!=1:raise ValueError('Claim records changed')
-    out['additional_current_claim_checks']='PASS: universe,cohorts,overlap-control,spatial,CARE,descriptive matching,reference examples,claim records'
+    out['additional_current_claim_checks']='PASS: universe,cohorts,overlap-control,CARE,descriptive matching,reference examples,claim records'
     a=read('cohort_geometry.tsv').set_index(['dataset_label','geometry_component'])
     for label,translation,angle,trace in [('CARE',3.329,76.6,1.012),('GLASS',3.233,32.3,1.349),('GSE174554',4.784,85.1,.531)]:
         close(a.loc[(label,'centroid_translation'),'estimate'],translation,.0005)
         close(a.loc[(label,'subspace_rotation_max_principal_angle_deg'),'estimate'],angle,.05)
         close(a.loc[(label,'variance_expansion_topk_trace_ratio'),'estimate'],trace,.0005)
-    a=read('supplement_S5.tsv')
-    if len(a)!=3 or not (a.single_cell_localization=='malignant-dominant').all():raise ValueError('Protagonist localization changed')
-    if not a.mathematically_equivalent_to_original.str.startswith('NO').all():raise ValueError('Original predictors are not equivalent')
-    if list(a.DS03_blocked_recovery_q100)!=['20/20','0/20','0/20'] or list(a.DS03_naive_recovery_q100)!=['0/20','0/20','20/20']:raise ValueError('Protagonist recovery changed')
-    if not a.spatial_support.str.contains('matrix-rich:').all() or not a.spatial_support.str.contains('/17 patients positive').all():raise ValueError('Spatial provenance missing')
     return out
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output');args=p.parse_args();result=run()

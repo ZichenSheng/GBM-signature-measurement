@@ -1,0 +1,10 @@
+source("historical/withdrawn_spatial/normalization.R")
+X<-matrix(c(0,1,100,2,10,1000),nrow=3)
+L<-spot_log_cpm(X)
+restored<-sweep(2^L/1e6,2,colSums(X)+1,"*")-.5
+stopifnot(max(abs(restored-X))<1e-10)
+old<-log2(t(t(X)+.5)/(colSums(X)+1)*1e6)
+stopifnot(max(abs(old-L))>.1)
+stopifnot(spatial_binomial_p(15,17)==binom.test(15,17,.5,alternative="two.sided")$p.value)
+stopifnot(length(spatial_bh(rep(.5,600)))==600)
+cat("PASS normalization inverse, original recycling defect detected, two-sided alternative, BH600\n")

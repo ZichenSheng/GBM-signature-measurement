@@ -1,8 +1,8 @@
 # Data access and prepared-input contracts
 
-The current-paper registry is config/datasets.tsv. No study observation rows, expression matrices, donor capacities, simulated world-instance tables, images, or source archives are included. Aggregate tables are published reference outputs, not substitutes for raw-data regeneration.
+The current-paper registry is config/datasets.tsv. No study observation rows, expression matrices or patient-level source datasets are included. The final release adds derived aggregate/distribution tables and simulated-world projections, with patient labels and observation permutation mappings removed. Aggregate tables are published reference outputs, not substitutes for raw-data regeneration.
 
-Tier 1: scripts 01 and 05, the synthetic default of 06, and 99 --integrity-only run without source databases. Install the minimal R lock (digest 0.6.39; R 4.4.1).
+Tier 1: scripts 01 and 05, the synthetic default of 06, and 99 run without source databases. Install the minimal R lock (digest 0.6.39; R 4.4.1).
 
 Tier2 is certified for CRC04 using the source processed WTA RDS as described below. For the other analyses, obtaining the original source downloads does not by itself certify the exact prepared arrays; they remain Tier3.
 
@@ -34,3 +34,7 @@ python analysis/07_sampling_composition.py EXTERNAL_FROZEN_PROJECT_ROOT --output
 Input root must contain the frozen V1 context-stress, V2 context-deepening and V3 deformation directories named in the script. Required V3 prepared inputs are CARE_SPLIT_HALF_MODEL_SCORES.parquet, CARE_MATCHED_CELL_DOWNSAMPLE_MODEL_SCORES.parquet and CARE_BROAD_COMPARTMENT_REQUIRED_GENE_COUNTS.parquet. V1/V2 provide paired model scores, frozen gene mappings, pseudobulk counts and memberships. No external path is hard-coded. Output must be outside the public repository and frozen authority directories because intermediate outputs contain patient-level records. Only the aggregate summary is suitable for public certification. Seeds,1000 bootstrap draws,50/25-cell thresholds and the non-additive energy estimand are unchanged.
 
 GBmap source version is independently identified by its deposited Core asset and local frozen collection metadata. See the source authors' [data availability](https://pmc.ncbi.nlm.nih.gov/articles/PMC12526130/) and the exact asset URL in datasets.tsv.
+
+## Final NPJSBA inputs
+
+See FINAL_REPRODUCIBILITY.md for ACT1, Ivy, CARE and figure contracts. The original source-study data-access conditions apply; code publication does not grant dataset redistribution rights. Well/tumour/patient-level source tables and base artwork remain external. CGGA full-text classification evidence is paraphrased in the corrected registry; paper PDFs are not redistributed.
