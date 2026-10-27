@@ -1,6 +1,6 @@
 # GBM signature measurement manuscript reproducibility
 
-Code supporting **Transcriptomic signatures preserve biological direction without uniquely specifying state in glioblastoma**, synchronized with the final targeted-edit NPJSBA manuscript and final Figures 1–6.
+Code supporting **Transcriptomic signatures preserve biological direction without uniquely specifying tumour state in glioblastoma**, synchronized with the final targeted-edit NPJSBA manuscript and final Figures 1–6.
 
 Version 1.1.0 adds corrected Ivy inference, ACT1 overlap sensitivity, Ivy anatomical-profile extraction, final Figure 1/5 assembly, CARE baseline replay and ACT4 resolution-specific validation. This is claim-bounded reproducibility: public aggregate/distribution reaggregation, calculations on external prepared observations, and public-processed-input CRC04 inference are explicitly distinguished. Complete regeneration from redistributed raw databases is not claimed.
 
@@ -12,7 +12,7 @@ python3 -m venv .venv
 MANUSCRIPT_PYTHON=.venv/bin/python Rscript analysis/99_validate_release.R
 ```
 
-The default suite reaggregates public references and checks numerical kernels; external-input and figure commands are separate. See the executed receipts in `reproducibility/FINAL_VALIDATION.tsv` for the exact scope of each PASS. Output directories and external inputs are ignored by Git.
+The default suite reaggregates public references and checks numerical kernels; external-input and figure commands are separate. See the executed receipts in `reproducibility/EXECUTION_RECEIPTS.json` and `reproducibility/FINAL_REFERENCE_CHECKS.tsv` for the exact scope of each PASS. Output directories and external inputs are ignored by Git.
 
 - `analysis/`: current numerical entry points and final Figure 1/5 builders.
 - `audit_tools/`: K02–K05 extraction and verification sources; not new scientific analyses.
@@ -20,6 +20,6 @@ The default suite reaggregates public references and checks numerical kernels; e
 - `provenance/recovered_generators/`: curated recovered scientific sources; source-dependent provenance, not a one-command installation.
 - `historical/`: superseded references and withdrawn spatial source, excluded from active figures and claims.
 
-The original [v1.0.0](https://github.com/ZichenSheng/GBM-signature-measurement/releases/tag/v1.0.0) remains archived at [version DOI 10.5281/zenodo.22851963](https://doi.org/10.5281/zenodo.22851963); the repository's concept DOI is [10.5281/zenodo.22851962](https://doi.org/10.5281/zenodo.22851962). The new version DOI is recorded after Zenodo archives the immutable release.
+The original [v1.0.0](https://github.com/ZichenSheng/GBM-signature-measurement/releases/tag/v1.0.0) remains archived at [version DOI 10.5281/zenodo.22851963](https://doi.org/10.5281/zenodo.22851963); the repository's concept DOI is [10.5281/zenodo.22851962](https://doi.org/10.5281/zenodo.22851962). Version [v1.1.0](https://github.com/ZichenSheng/GBM-signature-measurement/releases/tag/v1.1.0) is archived at [version DOI 10.5281/zenodo.23687940](https://doi.org/10.5281/zenodo.23687940). The archived source commit is `c89e52d16af3e61d2d4bd22e11362725e669b28b`; its 169-file archive SHA-256 is `6b3fa1ba04b8272d225ac797942170d090c03758ab3cb4946745dae5d5558366`. See [verified release record](docs/RELEASE_v1.1.0.json). The file manifest describes the immutable tagged archive, not later development documentation.
 
 [MeasureQual v0.10.0](https://github.com/ZichenSheng/MeasureQual) remains a separate package, archived at [10.5281/zenodo.22846512](https://doi.org/10.5281/zenodo.22846512).

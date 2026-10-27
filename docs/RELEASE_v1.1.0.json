@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "version_doi": "10.5281/zenodo.23687940",
+  "concept_doi": "10.5281/zenodo.22851962",
+  "record_url": "https://zenodo.org/records/23687940",
+  "release_commit": "c89e52d16af3e61d2d4bd22e11362725e669b28b",
+  "zenodo_archive_md5_matches_record": true,
+  "zenodo_github_candidate_uncompressed_files_identical": true,
+  "historical_tag_unchanged": true,
+  "historical_record_version_metadata_and_files_unchanged": true,
+  "doi_resolution": "200\thttps://zenodo.org/records/23687940",
+  "published": "published",
+  "version": "1.1.0",
+  "repository": "https://github.com/ZichenSheng/GBM-signature-measurement",
+  "release_url": "https://github.com/ZichenSheng/GBM-signature-measurement/releases/tag/v1.1.0",
+  "archive_sha256": "6b3fa1ba04b8272d225ac797942170d090c03758ab3cb4946745dae5d5558366",
+  "file_manifest_sha256": "6fdd4ba23cfb6b6e41ca82fb1f0f72d3612e980a40303f11157d2795e12bb26c",
+  "historical_version_doi": "10.5281/zenodo.22851963",
+  "post_release_documentation_only": true,
+  "documentation_errata": [
+    "Archived README receipt filename FINAL_VALIDATION.tsv should read EXECUTION_RECEIPTS.json and FINAL_REFERENCE_CHECKS.tsv; corrected on development branch without modifying the tag.",
+    "README manuscript title synchronized with final targeted-edit wording (tumour state)."
+  ]
+}
