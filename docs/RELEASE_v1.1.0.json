@@ -19,6 +19,7 @@
   "post_release_documentation_only": true,
   "documentation_errata": [
     "Archived README receipt filename FINAL_VALIDATION.tsv should read EXECUTION_RECEIPTS.json and FINAL_REFERENCE_CHECKS.tsv; corrected on development branch without modifying the tag.",
-    "README manuscript title synchronized with final targeted-edit wording (tumour state)."
+    "README manuscript title synchronized with final targeted-edit wording (tumour state).",
+    "Inherited RELEASE_BLOCKERS.tsv, MANUSCRIPT_DISCREPANCY_LOG.tsv and REPOSITORY_LINEAGE.md describe the v1.0.0 preparation/lineage state. They are historical context; final claim scope is CURRENT_RESULTS_AUTHORITY.md and RESULT_CODE_CROSSWALK.tsv. These inherited records are moved under historical/v1.0.0/docs on the development branch."
   ]
 }
