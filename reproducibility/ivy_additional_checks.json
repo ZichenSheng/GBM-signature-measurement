@@ -1,0 +1,29 @@
+{
+  "ALL5_Q1_author_code_rerun": {
+    "max_abs_differences": {
+      "partial_r2": 5.518685508576482e-11,
+      "omnibus_f": 1.1394831744837575e-08,
+      "permutation_p": 5.551115123125783e-17,
+      "bh_fdr": 9.71445146547012e-17
+    },
+    "n_representations": 201,
+    "permutation_draws": 10000
+  },
+  "historical_float32_Q2": {
+    "ALL5": 170,
+    "CORE3": 134,
+    "PAN_MVP": 117
+  },
+  "corrected_float64_Q2": {
+    "ALL5": 170,
+    "CORE3": 134,
+    "PAN_MVP": 98
+  },
+  "regenerated_panel_table_matches_public_reference": true,
+  "unsigned_gene_score_max_abs_differences": {
+    "Liu EMT-5": 4.95804730604732e-10,
+    "Xiao EMT-4": 3.1172842085425145e-10,
+    "Arimappamagan-14": 4.992264934777779e-11
+  },
+  "orientation_counts": "Liu MVP>CT 9/9; Xiao MVP<CT 9/9; Arimappamagan LE>CT 8/8"
+}

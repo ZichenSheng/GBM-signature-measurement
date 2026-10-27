@@ -1,6 +1,6 @@
 # Source recovery and redistribution boundary
 
-`SOURCE_RECOVERY_INVENTORY.tsv` records the completed 51-generator evidence-gap recovery: 36 prior independent reconstructions and 15 reruns through author code. Those are historical execution classifications, not a claim that 51 raw-data workflows execute from this public archive.
+`SOURCE_RECOVERY_INVENTORY.tsv` contains 56 evidence-gap records, including the completed 51-generator evidence-gap recovery: 36 prior independent reconstructions and 15 reruns through author code. Those are historical execution classifications, not a claim that 51 raw-data workflows execute from this public archive.
 
 `ADDED_FILE_SOURCES.tsv` records original source paths relative to the external source archive, immutable original hashes, public file hashes, purpose and adaptation. `FIGURE_CODE_SOURCES.tsv` records the final figure implementation sources. Code is the research author's source under this repository's MIT licence; no third-party expression objects, observation-level study tables or private correspondence are redistributed. Derived numerical tables and projected simulation worlds are retained to permit bounded checks. Simulation projections exclude observation-block labels, permutation maps and donor/recipient observation indices.
 

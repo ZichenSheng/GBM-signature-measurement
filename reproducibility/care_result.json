@@ -1,0 +1,8 @@
+{
+  "patient_n": 56,
+  "representation_n": 201,
+  "median_mean_CV_R2": 0.09030960949139442,
+  "median_median_repeat_CV_R2": 0.0927802629536415,
+  "per_representation_max_difference": 4.990730051446235e-13,
+  "leakage_probe_max_difference": 0.0
+}

@@ -1,0 +1,66 @@
+{
+  "linear|N1_full": {
+    "rep_n": 201,
+    "structure_rho": 0.7309225783071415,
+    "PC1_var_CGGA325": 0.33990724887430035,
+    "absPC1_eco_CGGA325": 0.9390657781068741,
+    "PC1_var_CGGA693": 0.580490054469617,
+    "absPC1_eco_CGGA693": 0.9574818752560327
+  },
+  "linear|N2_ruleA_all201": {
+    "rep_n": 201,
+    "structure_rho": 0.6914194916493079,
+    "PC1_var_CGGA325": 0.2869336291948134,
+    "absPC1_eco_CGGA325": 0.9163581389608789,
+    "PC1_var_CGGA693": 0.5525394860411582,
+    "absPC1_eco_CGGA693": 0.9333695351872493
+  },
+  "linear|N2_ruleC_le20pct": {
+    "rep_n": 160,
+    "structure_rho": 0.6743917699164012,
+    "PC1_var_CGGA325": 0.27723964538089935,
+    "absPC1_eco_CGGA325": 0.9003455510304826,
+    "PC1_var_CGGA693": 0.5773596369359,
+    "absPC1_eco_CGGA693": 0.9037983366200806
+  },
+  "linear|N2_ruleD_nooverlap": {
+    "rep_n": 114,
+    "structure_rho": 0.6406616935413637,
+    "PC1_var_CGGA325": 0.26250126876448443,
+    "absPC1_eco_CGGA325": 0.8905343699864249,
+    "PC1_var_CGGA693": 0.556288412475746,
+    "absPC1_eco_CGGA693": 0.9101622414663655
+  },
+  "log2|N1_full": {
+    "rep_n": 201,
+    "structure_rho": 0.7506314502028109,
+    "PC1_var_CGGA325": 0.4310125149629914,
+    "absPC1_eco_CGGA325": 0.9660002468221648,
+    "PC1_var_CGGA693": 0.7660038797772111,
+    "absPC1_eco_CGGA693": 0.9598635761715587
+  },
+  "log2|N2_ruleA_all201": {
+    "rep_n": 201,
+    "structure_rho": 0.7130762382613595,
+    "PC1_var_CGGA325": 0.36828252019230545,
+    "absPC1_eco_CGGA325": 0.9473651733925706,
+    "PC1_var_CGGA693": 0.7443571816432254,
+    "absPC1_eco_CGGA693": 0.938418741128164
+  },
+  "log2|N2_ruleC_le20pct": {
+    "rep_n": 160,
+    "structure_rho": 0.7024163583822622,
+    "PC1_var_CGGA325": 0.34627080677144056,
+    "absPC1_eco_CGGA325": 0.9210786128594348,
+    "PC1_var_CGGA693": 0.76732182413778,
+    "absPC1_eco_CGGA693": 0.9099621785894614
+  },
+  "log2|N2_ruleD_nooverlap": {
+    "rep_n": 114,
+    "structure_rho": 0.6711465280897172,
+    "PC1_var_CGGA325": 0.32830900130169893,
+    "absPC1_eco_CGGA325": 0.9224052819943231,
+    "PC1_var_CGGA693": 0.7478652757816674,
+    "absPC1_eco_CGGA693": 0.9128678537064029
+  }
+}

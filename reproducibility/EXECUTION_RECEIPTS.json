@@ -1,0 +1,421 @@
+[
+  {
+    "test": "public_suite",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "Rscript analysis/99_validate_release.R",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$REPOSITORY/results_reference/final/cgga_subset_alignment_results.tsv",
+        "sha256": "cf6a6a44fbad64d137d04812b960826f1c6cac35c21b22ec074777f9ff0ab303"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/act4_worlds_999_exact_200k.tsv",
+        "sha256": "300e1bf2e1fe602efd0b4544ebaa23c42c676ddbf8d506ffbd20395096f8e6c7"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig1D_observed_and_null_summary.tsv",
+        "sha256": "01a95aab21890cd975fe93a1ac415e6cad12e935ad4c6f9102307f5ab9cccd30"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig1D_representation_programme_overlap.tsv",
+        "sha256": "4a2a96be78a1fe90a47ea5f09fdef036660aedd50b1a7054732b7c2a6da995ee"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/act4_protagonist_worlds_999.tsv",
+        "sha256": "4d6a29457a5aa15bfa2f2ea671e1d5be84b09a583d72219bd47267b806115a12"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig1D_independent_matched_null_500_panels.tsv.gz",
+        "sha256": "c70471a009ae4d2abb4eda5b7a3f0dd95ed922480c7b2427d17d9ba2362dd3ee"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/act4_true_null_999.tsv",
+        "sha256": "44842fe07ad54d6f315730b78f14a015176253caa554375d724bb2c27d529fe4"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig5D_ivy_state_profile_summary.tsv",
+        "sha256": "1084b3e0254bb0721fcd8eaeb44eed78c8f37b8eac8baef1e60dee922fd2796b"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig5D_ivy_frozen_model_statistics.tsv",
+        "sha256": "1fe2e124d53af62b0598fc450fc3827a3cd9fb94e8be6e684e6c5d94e9f4263b"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/cgga_registry_corrected.tsv",
+        "sha256": "e375b80500fcc7a51e4a9e8241466483d8e41c5447d0865dc5bf63c025fbbf8e"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig5D_ivy_gene_state_profiles.tsv",
+        "sha256": "482ff26c63a0b9262974bbf89b8c8df7739e1aabeca73a71028a5e79981c1d28"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/A_coefficients_membership.tsv",
+        "sha256": "c20cdd06f6c2503a9c01c201f5ea11b986c0833b0c0d329e9bf001acd3ff1dbe"
+      },
+      {
+        "path": "$REPOSITORY/results_reference/final/SD_Fig5G_act4_counts_999_vs_high_resolution.tsv",
+        "sha256": "1ba4975afb7bb697d8f30aa8fb6b2c7015814f6775311098088fd7f11c810778"
+      }
+    ],
+    "expected": "all public numerical/kernel assertions pass",
+    "exit_code": 0,
+    "seconds": 35.99,
+    "verification_level": "PUBLIC_AGGREGATE_AND_NUMERICAL_KERNEL",
+    "log": "validation/locked/public_suite.log",
+    "status": "PASS"
+  },
+  {
+    "test": "ivy_q2",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/ivy/reproduce_q2.py --scores '$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/04_SCORES/IVYGAP_PRIMARY201_MODEL_SCORES.tsv.gz' --output '$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/ivy_q2'",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/04_SCORES/IVYGAP_PRIMARY201_MODEL_SCORES.tsv.gz",
+        "sha256": "6477b0836e55d514f4656c149f94143d47f2c1a207a1e26f1d640a9156ac1f8f"
+      }
+    ],
+    "expected": "170 / 134 / 98; seed 2026083102; one stream, 2000 draws per branch",
+    "exit_code": 0,
+    "seconds": 7.73,
+    "verification_level": "AUTHOR_CODE_RERUN_FROM_PREPARED_OBSERVATIONS",
+    "log": "validation/locked/ivy_q2.log",
+    "status": "PASS"
+  },
+  {
+    "test": "act1",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/act1/reproduce_observed.py --expression-dir '$GBM_SOURCE_ROOT/GBM标签数据库/GBM_unified_registry_de_novo_benchmark_AuthorityV2_2026-07-23/09_de_novo_derived/03_preprocessed_expression' --output '$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/act1'",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$GBM_SOURCE_ROOT/GBM标签数据库/GBM_unified_registry_de_novo_benchmark_AuthorityV2_2026-07-23/09_de_novo_derived/03_preprocessed_expression/CGGA325_STRICT_EXPRESSION_PREPROCESSED.tsv",
+        "sha256": "3bea573b3e9b9e91f6bb65473bf81882c0afd3d3d81af6550dd91518b02d9dc3"
+      },
+      {
+        "path": "$GBM_SOURCE_ROOT/GBM标签数据库/GBM_unified_registry_de_novo_benchmark_AuthorityV2_2026-07-23/09_de_novo_derived/03_preprocessed_expression/CGGA693_STRICT_EXPRESSION_PREPROCESSED.tsv",
+        "sha256": "6e5faa4a1f903476116dae62c30db55e62f2b283c8acad59badad3b3e6090b83"
+      }
+    ],
+    "expected": "all 24 observed endpoints within 1e-8; representation denominators 201/160/114",
+    "exit_code": 0,
+    "seconds": 1.14,
+    "verification_level": "INDEPENDENT_RECONSTRUCTION_FROM_PREPARED_OBSERVATIONS",
+    "log": "validation/locked/act1.log",
+    "status": "PASS"
+  },
+  {
+    "test": "care",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/care/reproduce_baseline.py --source-root '$GBM_SOURCE_ROOT' --output '$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/care'",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$GBM_SOURCE_ROOT/GBM_SIGNATURE_CONTEXT_STRESS_TEST_EXTENSION_V1_FINAL/04_model_scores/DS01/PRIMARY201_MODEL_SCORES.parquet",
+        "sha256": "a3a0a348564cca57e9ea0eb8abf9d47a4cde6a1f79658cbce02855be15d41c62"
+      },
+      {
+        "path": "$GBM_SOURCE_ROOT/GBM_SIGNATURE_CONTEXT_STRESS_TEST_EXTENSION_V1_FINAL/04_model_scores/DS01/FROZEN_ECOLOGY_AXIS_SCORES.parquet",
+        "sha256": "2315f13fa53f93ad65ef7807336e87b9e506adc4ed67d73b727144fc1b39cf11"
+      },
+      {
+        "path": "$GBM_SOURCE_ROOT/GBM_SIGNATURE_CONTEXT_EXTENSION_DEEPENING_V2_FINAL/00_governance/freeze/memberships/AS_CARE_LOPO56.tsv",
+        "sha256": "683adf23f05c50cb13ada49f047e1dde5a2e3fefa92a68fbd694fb9d0ae8b621"
+      }
+    ],
+    "expected": "median R2 0.09030960949; frozen per-representation difference <1e-10; leakage probe 0",
+    "exit_code": 0,
+    "seconds": 6.29,
+    "verification_level": "AUTHOR_CODE_RERUN_FROM_PREPARED_OBSERVATIONS",
+    "log": "validation/locked/care.log",
+    "status": "PASS"
+  },
+  {
+    "test": "ivy_gene_profiles",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' audit_tools/ivy_gene_profiles.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": {
+      "$GBM_DATA_ROOT/IvyGAP/PROCESSED/IVYGAP_ANATOMIC122_REQUIRED_GENE_Z.parquet": "d1aa2e3f14808efd633852ca41ec9475cbef486bbb27614178444f0789c0401d",
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/04_SCORES/IVYGAP_PRIMARY201_MODEL_SCORES.tsv.gz": "6477b0836e55d514f4656c149f94143d47f2c1a207a1e26f1d640a9156ac1f8f",
+      "$GBM_SOURCE_ROOT/Figure5_ACT5_SPATIAL_REBUILT/source_tables/A_coefficients_membership.tsv": "c20cdd06f6c2503a9c01c201f5ea11b986c0833b0c0d329e9bf001acd3ff1dbe"
+    },
+    "expected": "three unsigned profile orientations and gene score checks",
+    "exit_code": 0,
+    "seconds": 0.45,
+    "verification_level": "INDEPENDENT_RECONSTRUCTION_FROM_PREPARED_OBSERVATIONS",
+    "log": "validation/locked/ivy_gene_profiles.log",
+    "status": "PASS"
+  },
+  {
+    "test": "ivy_panel_source",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' audit_tools/ivy_panel_source.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": {
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/04_SCORES/IVYGAP_PRIMARY201_MODEL_SCORES.tsv.gz": "6477b0836e55d514f4656c149f94143d47f2c1a207a1e26f1d640a9156ac1f8f",
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/05_ANATOMICAL_INFORMATIVENESS/IVYGAP_ANATOMICAL_INFORMATIVENESS_MODEL_LEVEL.tsv": "50c316c46d1ce9eb9f6f2e29298d0f4adcf46d1ec4f90d3b76fe2e3cd7036ba5",
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/06_ANATOMICAL_IDENTIFIABILITY/IVYGAP_ANATOMICAL_IDENTIFIABILITY_MODEL_LEVEL.tsv": "5fd64baf910ff249de6c9e2cb7c7b38ac2f1b107780d1ac7c2ee617ef7530e0a"
+    },
+    "expected": "Liu 9/9; Xiao 9/9 opposite; Arimappamagan 8/8; partial R2 frozen only",
+    "exit_code": 0,
+    "seconds": 0.41,
+    "verification_level": "PREPARED_OBSERVATION_REGENERATION_WITH_FROZEN_R2",
+    "log": "validation/locked/ivy_panel_source.log",
+    "status": "PASS"
+  },
+  {
+    "test": "overlap_panel_source",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' audit_tools/overlap_panel_source.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$GBM_VALIDATION_ROOT/GBM_INDEPENDENT_SCIENTIFIC_AUDIT/logs/act1/null_iterations_all.tsv.gz",
+        "sha256": "e06a3c8182c2c52034dba855914bfe8af706a1dd07b74e30184abbfb4bbd17b1"
+      }
+    ],
+    "expected": "500-panel null reaggregation; plus-one 1/501 = 0.001996",
+    "exit_code": 0,
+    "seconds": 0.45,
+    "verification_level": "SAVED_NULL_DISTRIBUTION_REAGGREGATION",
+    "log": "validation/locked/overlap_panel_source.log",
+    "status": "PASS"
+  },
+  {
+    "test": "act4_recount",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' audit_tools/act4_resolution_recount.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$GBM_VALIDATION_ROOT/GBM_INDEPENDENT_SCIENTIFIC_AUDIT/logs/act4/act4_world_level_independent.tsv",
+        "sha256": "f06c3874772dca18773c64098486d1fa20b7bfcd0cec7879b409790e17586032"
+      }
+    ],
+    "expected": "999/exact-blocked/200000-naive resolution-specific counts",
+    "exit_code": 0,
+    "seconds": 0.32,
+    "verification_level": "SAVED_SIMULATION_REAGGREGATION",
+    "log": "validation/locked/act4_recount.log",
+    "status": "PASS"
+  },
+  {
+    "test": "crc04_external",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "Rscript analysis/06_crc04_exact_inference.R --source-rds '$GBM_SOURCE_ROOT/GBM_ACT6_EVALUABLY_IMPLEMENTATION_V1/ACT6_POSTFREEZE_CRC04/sources/extracted/Nanostring_GeoMx/exp2/r_object/geomx_exp2_target_Data_norm.RDS'",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": [
+      {
+        "path": "$GBM_SOURCE_ROOT/GBM_ACT6_EVALUABLY_IMPLEMENTATION_V1/ACT6_POSTFREEZE_CRC04/sources/extracted/Nanostring_GeoMx/exp2/r_object/geomx_exp2_target_Data_norm.RDS",
+        "sha256": "5c4eea69b73a0244f0b475265dae93db0ca0806fd06606419c5de4d0bdab968a"
+      }
+    ],
+    "expected": "n=9, statistic=1.5957232514584607, one-sided upper-tail exact P=.03125, 512 sign flips",
+    "exit_code": 0,
+    "seconds": 0.79,
+    "verification_level": "PUBLIC_PROCESSED_INPUT_RECONSTRUCTION",
+    "log": "validation/locked/crc04_external.log",
+    "status": "PASS"
+  },
+  {
+    "test": "build_fig1_panels",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/figures/build_fig1_panels.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": {
+      "$GBM_VALIDATION_ROOT/GBM_INDEPENDENT_SCIENTIFIC_AUDIT/logs/act1/null_iterations_all.tsv.gz": "e06a3c8182c2c52034dba855914bfe8af706a1dd07b74e30184abbfb4bbd17b1",
+      "$GBM_VALIDATION_ROOT/GBM_INDEPENDENT_SCIENTIFIC_AUDIT/logs/act1/null_summary.tsv": "b6f829a072f7063420bf14ae1eb07d29a12d4495aa1ec55c2a63ee1639567815",
+      "$REPOSITORY/results_reference/final/SD_Fig1D_independent_matched_null_500_panels.tsv.gz": "c70471a009ae4d2abb4eda5b7a3f0dd95ed922480c7b2427d17d9ba2362dd3ee",
+      "$REPOSITORY/results_reference/final/SD_Fig1D_observed_and_null_summary.tsv": "01a95aab21890cd975fe93a1ac415e6cad12e935ad4c6f9102307f5ab9cccd30",
+      "$REPOSITORY/results_reference/final/SD_Fig1D_representation_programme_overlap.tsv": "4a2a96be78a1fe90a47ea5f09fdef036660aedd50b1a7054732b7c2a6da995ee",
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/06_ANATOMICAL_IDENTIFIABILITY/ANATOMICAL_INFORMATIVENESS_VS_IDENTIFIABILITY.tsv": "c22d416df151b62773c68acd94e53d4b9f8fa186a761a490a5cda6f38ab6be98"
+    },
+    "expected": "final Figure 1/5 build and layout assertions",
+    "exit_code": 0,
+    "seconds": 5.91,
+    "verification_level": "FINAL_ARTWORK_REGENERATION_FROM_PREPARED_PANEL_OBSERVATIONS",
+    "log": "validation/locked/build_fig1_panels.log",
+    "status": "PASS"
+  },
+  {
+    "test": "build_fig5_panels",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/figures/build_fig5_panels.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": {
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/05_MAIN_FIGURE_REDESIGN/source_data_candidates/SD_Fig5D_ivy_tumour_state_means.tsv": "e1482d5d2b482649807977e4c6e8b784b3f3522099c5051779f340f08e0391d3",
+      "$REPOSITORY/results_reference/final/SD_Fig5D_ivy_state_profile_summary.tsv": "1084b3e0254bb0721fcd8eaeb44eed78c8f37b8eac8baef1e60dee922fd2796b",
+      "$REPOSITORY/results_reference/final/SD_Fig5D_ivy_frozen_model_statistics.tsv": "1fe2e124d53af62b0598fc450fc3827a3cd9fb94e8be6e684e6c5d94e9f4263b",
+      "$REPOSITORY/results_reference/final/SD_Fig5D_ivy_gene_state_profiles.tsv": "482ff26c63a0b9262974bbf89b8c8df7739e1aabeca73a71028a5e79981c1d28",
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/05_MAIN_FIGURE_REDESIGN/source_data_candidates/SD_Fig5D_ivy_sample_scores.tsv": "47db6c449229a9f65f5aa3f6658015ec9147d1d25635348576386de717441864",
+      "$REPOSITORY/results_reference/final/A_coefficients_membership.tsv": "c20cdd06f6c2503a9c01c201f5ea11b986c0833b0c0d329e9bf001acd3ff1dbe",
+      "$GBM_SOURCE_ROOT/Figure5_ACT5_SPATIAL_REBUILT/source_tables/FG_worlds.tsv": "4d6a29457a5aa15bfa2f2ea671e1d5be84b09a583d72219bd47267b806115a12",
+      "$GBM_SOURCE_ROOT/GBM_R4_POST_STAGEB1_STRATEGIC_CLOSURE_AUDIT_2026-09-09/03_null_geometry/DS03_BLOCKED_VS_NAIVE_REVERSAL_BY_SIGNATURE_Q.tsv": "a0de6513a426cd0abd5cf85d2214fe848dfbd98b593a704cf2d202ca7e33d57a",
+      "$GBM_SOURCE_ROOT/GBM_R4_STAGEB1_DS03_CALIBRATED_DETECTABILITY_TRANSPORT_2026-09-08/06_kmatched_null/DS03_FORMAL_NULL_LEDGER.tsv": "0e1a35ef8dc88a4f4ad48b1836cf90860a0a446c2080e3caf1e60149b5ceeae4",
+      "$REPOSITORY/results_reference/final/SD_Fig5G_act4_counts_999_vs_high_resolution.tsv": "1ba4975afb7bb697d8f30aa8fb6b2c7015814f6775311098088fd7f11c810778"
+    },
+    "expected": "final Figure 1/5 build and layout assertions",
+    "exit_code": 0,
+    "seconds": 1.26,
+    "verification_level": "FINAL_ARTWORK_REGENERATION_FROM_PREPARED_PANEL_OBSERVATIONS",
+    "log": "validation/locked/build_fig5_panels.log",
+    "status": "PASS"
+  },
+  {
+    "test": "compose_figures",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/figures/compose_figures.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": {
+      "$GBM_VALIDATION_ROOT/文稿/figure/Figure1.pdf": "8cf2494d2a266d77c2da8df0b88825fb513854365d105210941c4d5a6f1d4008",
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/02_DELIVERABLES/Figures_revised/Figure5_NPJSBA_revised.pdf": "3257b1ea460f13311cbd2d735576d057b8ac614c266920881d137f39fdaf15da",
+      "$REPOSITORY/analysis/figures/fig5_E_layout.json": "fe114fff749bb06c87493f7fa27ce637feee449f16ca49fe89ce3f6deae4bc42"
+    },
+    "expected": "final Figure 1/5 build and layout assertions",
+    "exit_code": 0,
+    "seconds": 99.61,
+    "verification_level": "FINAL_ARTWORK_REGENERATION_FROM_PREPARED_PANEL_OBSERVATIONS",
+    "log": "validation/locked/compose_figures.log",
+    "status": "PASS"
+  },
+  {
+    "test": "validate_figures",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "'python' analysis/figures/validate_figures.py",
+    "environment": {
+      "GBM_SOURCE_ROOT": "$GBM_SOURCE_ROOT",
+      "GBM_DATA_ROOT": "$GBM_DATA_ROOT",
+      "GBM_VALIDATION_ROOT": "$GBM_VALIDATION_ROOT",
+      "GBM_FIGURE_OUT": "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures",
+      "MANUSCRIPT_PYTHON": "python"
+    },
+    "input_hashes": {
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures/figures/Figure1_NPJSBA_Final_600dpi.png": "15c6203f5b6f473738f0c6255c26c43eb4680fbff1dd4bfc25389c919ad8b137",
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures/figures/Figure1_NPJSBA_Final.pdf": "d379973a3053e6e78b01ff14d325cc12add8dcd6728864701b155906048d97f5",
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures/figures/Figure5_NPJSBA_Final_600dpi.png": "353bc638ee91b01bbc38e3e8f9dec447c6df48ac4647a6ae366404a662dba63a",
+      "$GBM_VALIDATION_ROOT/GBM_NPJSBA_REVISION/08_CODE_RELEASE_FINAL/validation/locked/figures/figures/Figure5_NPJSBA_Final.pdf": "769640f620697644c2330f25d9ca85d872d8df9bb476c37f8790729e232fc139"
+    },
+    "expected": "final Figure 1/5 build and layout assertions",
+    "exit_code": 0,
+    "seconds": 12.07,
+    "verification_level": "FINAL_ARTWORK_REGENERATION_FROM_PREPARED_PANEL_OBSERVATIONS",
+    "log": "validation/locked/validate_figures.log",
+    "status": "PASS"
+  },
+  {
+    "test": "ivy_Q1_and_historical_contrast",
+    "source_commit": "c9dd73b0472f207a82552a3b0f8ca7de8984577f",
+    "command": "python verify_ivy_reconstruction.py (handoff/scripts); invokes public q1_informativeness and historical q2_identifiability",
+    "input_hashes": {
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/04_SCORES/IVYGAP_PRIMARY201_MODEL_SCORES.tsv.gz": "6477b0836e55d514f4656c149f94143d47f2c1a207a1e26f1d640a9156ac1f8f",
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/05_ANATOMICAL_INFORMATIVENESS/IVYGAP_ANATOMICAL_INFORMATIVENESS_MODEL_LEVEL.tsv": "50c316c46d1ce9eb9f6f2e29298d0f4adcf46d1ec4f90d3b76fe2e3cd7036ba5",
+      "$GBM_SOURCE_ROOT/IVYGAP_PATHOLOGY_ANATOMY_EXTENSION_V1/06_ANATOMICAL_IDENTIFIABILITY/IVYGAP_ANATOMICAL_IDENTIFIABILITY_MODEL_LEVEL.tsv": "5fd64baf910ff249de6c9e2cb7c7b38ac2f1b107780d1ac7c2ee617ef7530e0a"
+    },
+    "expected": "Q1 partial R2 within 1e-9; F rtol/atol 1e-9; P/q within 1e-12; original Q2 170/134/117; corrected 170/134/98; source profile orientations 9/9,9/9,8/8",
+    "actual": {
+      "ALL5_Q1_author_code_rerun": {
+        "max_abs_differences": {
+          "partial_r2": 5.518685508576482e-11,
+          "omnibus_f": 1.1394831744837575e-08,
+          "permutation_p": 5.551115123125783e-17,
+          "bh_fdr": 9.71445146547012e-17
+        },
+        "n_representations": 201,
+        "permutation_draws": 10000
+      },
+      "historical_float32_Q2": {
+        "ALL5": 170,
+        "CORE3": 134,
+        "PAN_MVP": 117
+      },
+      "corrected_float64_Q2": {
+        "ALL5": 170,
+        "CORE3": 134,
+        "PAN_MVP": 98
+      },
+      "regenerated_panel_table_matches_public_reference": true,
+      "unsigned_gene_score_max_abs_differences": {
+        "Liu EMT-5": 4.95804730604732e-10,
+        "Xiao EMT-4": 3.1172842085425145e-10,
+        "Arimappamagan-14": 4.992264934777779e-11
+      },
+      "orientation_counts": "Liu MVP>CT 9/9; Xiao MVP<CT 9/9; Arimappamagan LE>CT 8/8"
+    },
+    "status": "PASS",
+    "verification_level": "AUTHOR_CODE_RERUN_FROM_PREPARED_OBSERVATIONS; INDEPENDENT_PROFILE_RECONSTRUCTION"
+  }
+]

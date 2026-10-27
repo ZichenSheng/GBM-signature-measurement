@@ -1,0 +1,9 @@
+{
+  "all_records": 56,
+  "gap_A_records": 51,
+  "gap_A_classifications": {
+    "SOURCE_FOUND_AND_INDEPENDENTLY_REPRODUCED": 36,
+    "SOURCE_FOUND_AND_AUTHOR_CODE_REPRODUCED": 15
+  },
+  "other_gap_records": 5
+}

@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "canvas_fig1": {
+      "pass": true
+    },
+    "canvas_fig5": {
+      "pass": true
+    },
+    "A1_fig1_A_B_C_pixels": {
+      "pass": true
+    },
+    "A2_fig1_A_B_C_text": {
+      "pass": true
+    },
+    "A1_fig1_oldD_to_E_pixels": {
+      "pass": true
+    },
+    "A2_fig1_oldD_to_E_text": {
+      "pass": true
+    },
+    "A1_fig1_F_pixels": {
+      "pass": true
+    },
+    "A2_fig1_F_text": {
+      "pass": true
+    },
+    "A1_fig5_A_B_C_pixels": {
+      "pass": true
+    },
+    "A2_fig5_A_B_C_text": {
+      "pass": true
+    },
+    "A1_fig5_E_gene_coverage_pixels": {
+      "pass": true
+    },
+    "A2_fig5_E_gene_coverage_text": {
+      "pass": true
+    },
+    "A1_fig5_E_claim_evaluability_pixels": {
+      "pass": true
+    },
+    "A2_fig5_E_claim_evaluability_text": {
+      "pass": true
+    },
+    "A1_fig5_E_tissue_scope_pixels": {
+      "pass": true
+    },
+    "A2_fig5_E_tissue_scope_text": {
+      "pass": true
+    },
+    "A1_fig5_F_pixels": {
+      "pass": true
+    },
+    "A2_fig5_F_text": {
+      "pass": true
+    },
+    "B1_fig1_forbidden_text_absent": {
+      "pass": true
+    },
+    "B1_fig5_forbidden_text_absent": {
+      "pass": true
+    },
+    "B2_fig1_withdrawn_images_absent": {
+      "pass": true
+    },
+    "B2_fig5_withdrawn_images_absent": {
+      "pass": true
+    },
+    "C_fig1_numbers_present": {
+      "pass": true
+    },
+    "C_fig5_numbers_present": {
+      "pass": true
+    },
+    "C_fig1_letters": {
+      "pass": true
+    },
+    "C_fig5_letters": {
+      "pass": true
+    },
+    "C5_fig1_min_font_ge_5.4": {
+      "pass": true
+    },
+    "C5_fig1_no_text_overlap": {
+      "pass": true
+    },
+    "C5_fig5_min_font_ge_5.4": {
+      "pass": true
+    },
+    "C5_fig5_no_text_overlap": {
+      "pass": true
+    },
+    "D1_fig1_png": {
+      "pass": true
+    },
+    "D2_fig1_fonts_embedded": {
+      "pass": true
+    },
+    "D1_fig5_png": {
+      "pass": true
+    },
+    "D2_fig5_fonts_embedded": {
+      "pass": true
+    },
+    "D3_svg_text_Fig1D_overlap_controlled_alignment": {
+      "pass": true
+    },
+    "D3_svg_text_Fig1G_state_resolution_rebuilt": {
+      "pass": true
+    },
+    "D3_svg_text_Fig5D_ivy_anatomical_profiles": {
+      "pass": true
+    },
+    "D3_svg_text_Fig5G_reference_dependent_detection": {
+      "pass": true
+    }
+  },
+  "failures": [],
+  "count": 38
+}

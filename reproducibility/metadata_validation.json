@@ -1,0 +1,7 @@
+{
+  "cff_schema": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+  "schema_validation": "PASS",
+  "version": "1.1.0",
+  "title": "Glioblastoma transcriptomic-signature measurement manuscript reproducibility",
+  "version_doi_omitted_until_real_issuance": true
+}
